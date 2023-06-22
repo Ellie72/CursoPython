@@ -1,14 +1,20 @@
 import forca
 import aula01
-print("****************************")
-print("******escolhe o seu jogo!***")
-print("****************************")
 
-print("(1)Forca e (2) Adivinhação")
+def escolhe_jogo():
+    print("****************************")
+    print("******escolhe o seu jogo!***")
+    print("****************************")
 
-jogo = int(input("Qual jogo?"))
+    print("(1)Forca e (2) Adivinhação")
 
-if(jogo==1):
-    print("Jogando forca")
-elif(jogo==2):
-    print("Jogando adivinhação")
+    jogo = int(input("Qual jogo?"))
+
+    if(jogo==1):
+        print("Jogando forca")
+        forca.jogar()
+    elif(jogo==2):
+        print("Jogando adivinhação")
+        aula01.jogar()
+if (__name__ == "__main__"):
+    escolhe_jogo()
